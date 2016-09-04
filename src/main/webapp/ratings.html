@@ -1,0 +1,33 @@
+<html>
+<head>
+<style>
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+</style>
+</head>
+<body><center>
+<h2>Movies and rating</h2>
+ 
+Rating:
+   <form onsubmit="location.href='http://localhost:8080/webapi/avgrating/'+ document.getElementById('Input').value; return false;">
+    
+  Enter the movie Id: <input type="text" id="Input" />
+  <input type="submit"  value="GetRating"/>
+</form>
+<br><br>
+<a href=http://localhost:8080> <button class='button'>Home</button></a>
+
+ </center>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+
+ 
+<html>
+<head>
+<style>
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+</style>
+</head>
+<body>
+<script>
+function chaitu(value)
+{
+	
+	val.value=document.getElementById("myInput").value+","+value;
+	}
+</script>
+<center>
+Rating:
+   <form onsubmit="location.href='http://localhost:8080/webapi/top/'+ document.getElementById('val').value; return false;">
+  Enter the userId: <input type="text" id="myInput" /><br><br>
+   Enter the movie Genre: <select id="thedropdown" onchange="chaitu(this.value)">
+    <option selected="selected">Select a Genre</option>
+  	<option value="action">Action</option>
+  	<option value="fantacy">Fantasy</option>
+    <option value="comedy">Comedy</option>  
+</select>
+ <input type="hidden" id="val" value="">
+  <input type="submit"  value="Get Rating"/>
+</form>
+
+<br><br>
+<a href=http://localhost:8080> <button class='button'>Home</button></a>
+
+ </center>
+
+</body>
+</html>
